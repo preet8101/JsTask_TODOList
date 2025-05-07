@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    #todoInput {
+      width: 60%;
+      padding: 10px;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 5px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    #addBtn {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .editBtn {
+      background-color: #ffc107;
+      color: black;
+    }
+
+    .deleteBtn {
+      background-color: #dc3545;
+      color: white;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    li {
+      background: white;
+      padding: 12px;
+      margin-bottom: 8px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .task-text {
+      flex: 1;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📝 TODO List</h1>
+
+  <div style="text-align:center;">
+    <input type="text" id="todoInput" placeholder="Add a new TODO">
+    <button id="addBtn" onclick="addTodo()">Add TODO</button>
+  </div>
+
+  <ul id="todoList"></ul>
+
+  <script src="Todo.js"></script>
+
+</body>
+</html>
